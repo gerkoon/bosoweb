@@ -1,0 +1,26 @@
+.carousel{
+    width: 100%;
+    margin: auto;
+
+
+    img.carousel-back-image {
+        width: 100%;
+        opacity: 0.4;
+    }
+
+    .carousel-caption{
+
+        color: $mainGrey;
+        text-shadow: 0 1px 2px rgba($mainWhite, 0.6);
+
+        img{
+            width: inherit;
+            line-height: 2em;
+            
+        }
+
+        p{
+            font-size: 20px;
+        }
+    }
+}

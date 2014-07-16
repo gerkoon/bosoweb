@@ -1,0 +1,12 @@
+.icon{
+    font-family: bosogroup, sans-serif;
+}
+
+i.icon{
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+.more:before{
+	content: "+ ";
+}

@@ -1,0 +1,17 @@
+{
+  "name": "bosogroupCorp",
+  "description": "",
+  "version": "0.1.0",
+  "homepage": "http://www.bitbucket.net/bosogroup/bosogroupCorp",
+  "author": {
+    "name": "Gorka Laucirica",
+    "site": "http://*"
+  },
+
+  "devDependencies": {
+    "grunt": "~0.4.0",
+    "grunt-contrib-compass": "~0.2.0",
+    "grunt-contrib-copy": "~0.4.0",
+    "grunt-contrib-watch": "~0.2.0"
+  }
+}

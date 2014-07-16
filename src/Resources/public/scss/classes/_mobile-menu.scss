@@ -1,0 +1,14 @@
+.displayOn{ display: inherit; }
+
+.fullScreen{
+    display: block;
+    width: 100%;
+    background: rgba($mainWhite,0.8);
+    position: fixed;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    padding: 24px;
+    @include box-sizing(border-box);
+}

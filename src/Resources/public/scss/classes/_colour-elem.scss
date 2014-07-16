@@ -1,0 +1,33 @@
+.yellow{
+    background: rgba($mainYellow, 0.75);
+    color: #727057;
+}
+
+.yellow_inner{
+    background: rgba($mainYellow, 0.6);
+}    
+
+.blue{
+    background: rgba($mainBlue, 0.5);
+}
+
+.blue_inner{
+    background: rgba($mainBlue, 0.7);
+}    
+
+.green{
+    background: rgba($mainGreen, 1);
+}
+
+.green_inner{
+    background: rgba($mainGreen, 0.7);
+}
+
+.blue, .yellow, .green{
+    text-align: center;
+    
+}
+
+.blue, .green, .blue_inner, .green_inner{
+    color: $mainWhite;
+}

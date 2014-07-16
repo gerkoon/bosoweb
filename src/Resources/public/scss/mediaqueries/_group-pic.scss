@@ -1,0 +1,19 @@
+.group-pic{
+    @media all and (max-width: $break-medium){
+        width: 50%;
+        img{
+            opacity: 1;
+        }
+        .portrait-info{
+            @include flexbox();
+            bottom: 0%;
+        }
+        .portrait-info_before{
+            display: none;
+        }
+    }
+
+    @media all and (max-width: $break-small){
+        width: 100%;
+    }
+}

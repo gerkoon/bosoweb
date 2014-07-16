@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}Bosogroup{% endblock %}</title>
+        {% block stylesheets %}{% endblock %}
+            <link href="/css/base.css" media="screen" rel="stylesheet" type="text/css" />
+            <link href='http://fonts.googleapis.com/css?family=Advent+Pro:400,500,600,700' rel='stylesheet' type='text/css'>
+        
+        
+        {% block metas %}{% endblock %}
+        <link rel="icon" type="image/x-icon" href="/favico.ico" />
+        
+        <meta name="viewport" content="width=device-width" />
+    </head>
+    <body>
+        {% include 'header.html.twig' %}
+        {% block body %}{% endblock %}
+        {% include 'footer.html.twig' %}
+        {% block javascripts %}
+
+        {% endblock %}
+
+                    <script src="/js/DropMenu.js"></script>
+    </body>
+</html>

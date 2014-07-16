@@ -1,0 +1,56 @@
+.element-header-pic{
+    width: 80px;
+    height: 80px;
+}
+
+.group-pic{
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+    img{
+        width: 100%;
+        opacity: .4;
+    }
+
+    .portrait-info{
+        bottom: -100%;
+        z-index: 8;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        @include flexbox();       
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        @include transition(bottom .5s ease);
+
+        p{
+            width: 75%;
+            margin: 0 auto;
+        }
+
+        .portrait-info_name, .portrait-info_position{
+            font-weight: $bold;
+        }
+
+        .portrait-info_position{
+            margin-bottom: 1em;
+        }
+    }
+
+    .portrait-info_before{
+        @extend .portrait-info;
+        bottom: 0%;
+    }
+
+    &:hover {
+        
+        .portrait-info{
+            bottom: 0%;
+        }
+        
+        .portrait-info_before{
+            bottom: 100%;
+        }
+    }
+}

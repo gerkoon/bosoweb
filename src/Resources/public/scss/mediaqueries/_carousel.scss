@@ -1,0 +1,12 @@
+.carousel-caption{
+    @media all and (max-width: $break-medium){
+        position: static;
+        background: rgba($mainYellow, 0.6);
+        padding-bottom: 2em;
+
+        p{
+            width: 75%;
+            margin: auto;
+        }
+    }
+}

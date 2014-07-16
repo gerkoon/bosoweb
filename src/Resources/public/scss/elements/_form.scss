@@ -1,0 +1,21 @@
+form{
+    &.flexed-column{
+        width: 40%;
+        margin: auto;
+
+        label{
+            padding: 20px 0 10px;
+        }
+
+        input, textarea{
+            font-size: 1em;
+            font-family: 'Advent Pro', sans-serif;
+            color: $mainGrey;
+
+            &.description-button{
+                @include buttons($mainWhite, $mainBlue);
+                border: none;
+            }
+        }
+    }
+}

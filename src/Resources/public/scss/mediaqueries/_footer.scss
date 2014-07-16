@@ -1,0 +1,9 @@
+footer{
+    @media all and (max-width: $break-small){
+        height: inherit;
+
+        nav{
+            float: none;
+        }
+    }
+}

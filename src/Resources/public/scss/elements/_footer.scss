@@ -1,0 +1,46 @@
+footer{
+    background: $mainGreen;
+    color: $mainWhite;
+    height: 51px;
+    padding: 0 25px;
+    @include box-sizing(border-box);
+    font-size: 15px;
+
+    #copyright{
+        display: inline-block;
+        height: 100%;
+
+        img{
+            position: absolute;
+        }
+
+        p{
+            display: inline-block;
+            line-height: 51px;
+            margin-left: 40px;
+        }
+    }
+
+    nav{
+        display: inline-block;
+        float: right;
+        line-height: 51px;
+    
+        ul li{
+            display: inline-block;
+
+            &:after{
+                content: ' | ';
+            }
+
+            a{
+                text-decoration: none;
+                color: $mainWhite;
+            }
+        }
+
+        .last:after{
+            content: '';
+        }
+    }
+}

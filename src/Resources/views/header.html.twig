@@ -1,0 +1,65 @@
+<header>
+    <div id="logo">
+        <a href="{{ app.url_generator.generate('portada') }}">
+            <img src="/images/logo.png">
+        </a>
+    </div>
+    
+
+    <nav id="navigation">
+        <button id="button_menu" class="icon" type="button">m</button> 
+
+        <ul id="mainMenu">
+            <li>
+                <div class="feature-box">
+                    <div class="flip-box" id="services">
+                        <div class="front icon">s</div>
+                        <div class="back"></div>
+                    </div>
+                </div>
+                Soluciones <i class="icon">d</i>
+                <ul>
+                    <li><a href="{{ app.url_generator.generate('ecommerce') }}">E-commerce</a></li>
+                    <li><a href="{{ app.url_generator.generate('design') }}">Diseño y desarrollo web</a></li>
+                    <li><a href="{{ app.url_generator.generate('marketing') }}">Marketing</a></li>
+                    <li><a href="#">Consultoria de negocio</a></li>
+                    <li><a href="{{ app.url_generator.generate('rrhh') }}">Gestión de personas</a></li>
+                    <li><a href="#">Juridico legal</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="{{ app.url_generator.generate('alotofus') }}">
+                    <div class="feature-box">
+                        <div class="flip-box" id="alotofus">
+                            <div class="front icon">a</div>
+                            <div class="back"></div>
+                        </div>
+                    </div>
+                    Alotofus
+                </a>
+            </li>
+            <li>
+                <a href="{{ app.url_generator.generate('who') }}">
+                    <div class="feature-box">
+                        <div class="flip-box" id="weAre">
+                            <div class="front icon">B</div>
+                            <div class="back"></div>
+                        </div>
+                    </div>
+                    Quienes somos
+                </a>
+            </li>
+            <li>
+                <a href="{{ app.url_generator.generate('contact') }}">
+                    <div class="feature-box">
+                        <div class="flip-box" id="contact">
+                            <div class="front icon">c</div>
+                            <div class="back"></div>
+                        </div>
+                    </div>
+                    Contacto
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>

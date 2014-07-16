@@ -1,0 +1,123 @@
+header{
+    height: 170px;
+    padding: 24px;
+    @include box-sizing(border-box);
+
+    nav{
+        display:inline-block;
+        float: right;
+
+        #button_menu{
+            background: none;
+            border: none;
+            display: none;
+            color: $mainGrey;
+            font-size: 2em;
+        }
+
+        a{
+            color:$mainGrey;
+        }
+
+        ul{
+        display: inline-block;
+
+            li{
+                display: inline-block;
+                text-align: center;
+                font-weight: $bold;
+                position: relative;
+                width: 98px;
+
+                .feature-box{
+                    position: relative;
+                    width: 91px;
+                    height: 91px;
+                    z-index: 10;
+                    margin-bottom: 15px;
+                    font-size: 1.7em;
+                    
+                    .flip-box{
+                        height: 100%;
+                        width: 100%;
+                        @include transition(float 1s ease);
+                        color: white;
+                                
+                        .front{
+                            background: $mainGreen;
+                            @include transition (transform (1s ease));
+                            @include rotateY(0deg);
+                            @include transform-style(preserve-3d);
+                            @include backface-visibility(hidden);
+                            height: 100%;
+                            width: 100%;
+                            line-height: 88px;
+                            font-weight: 100;
+                            font-size: 1.3em;
+                            
+                            &:hover{
+                                @include rotateY(-180deg);
+                            }
+                        }
+                        
+                        .back{
+                            background: $mainBlue; //kenduteko
+                            @include transition (transform (1s ease));
+                            @include rotateY(180deg);
+                            @include transform-style(preserve-3d);
+                            @include backface-visibility (hidden);
+                            height: 100%;
+                            width: 100%;
+                         }
+                        
+                        .front, .back{
+                            position: absolute;
+                        }
+                    } 
+                }
+
+                ul {
+                    position: absolute;
+                    display: none;
+                    left: 0px;
+                    padding-top: 40px;
+                    z-index: 9;
+
+                    li{
+                        display: block;
+                        text-align: left;
+                        background-color: $mainGreen;
+                        padding: 8px 0 9px 11px;
+                        border-bottom: solid 1px $mainWhite;
+                        color: $mainWhite;
+                        width: 200px;
+
+                        a{
+                            color: $mainWhite;
+                        }
+
+                        &:before{
+                            content: "o";
+                            margin-right: 10px;
+                            font-family: bosogroup;
+                        }
+                    }
+                }
+
+                &:hover{
+                    .feature-box .flip-box {
+                            @include rotateY(-180deg);
+                        .front{
+                            @include rotateY(-180deg);
+                            }
+                        .back{
+                            @include rotateY(0deg);
+                        }
+                    }
+
+                    ul{display:inherit;}
+                }              
+            }
+        }
+    }
+}

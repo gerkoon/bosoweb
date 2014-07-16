@@ -1,0 +1,134 @@
+{% extends 'base.html.twig' %}
+{% block stylesheets %} 
+    <link href="/extra/css/bootstrap.min.css" media="screen" rel="stylesheet" type="text/css" />
+{% endblock %}
+{% block body %}
+   <div id="container">
+        <section class="gr-pic">
+            <img src="images/bridgeCover.jpg" />
+            <h1>Hacemos de las necesidades sociales y empresariales soluciones tecnológicas.</h1>
+            
+        </section>
+
+        <section>
+            <div class="yellow">
+                <div class="element-1-1 description-text">
+                    <p>Nuestros servicios</p>
+                </div>
+                <div class="element-1-3">
+                    <img src="images/ecommerce.png" class="element-header-pic" />
+                    <h3>E-commerce</h3>
+                    <div>
+                        <p>Desarrollamos tu tienda online con las mejores funcionalidades del mercado, dándote soporte y atención personalizada.</p>
+                    </div>
+                    <aside class="element-button">
+                        <a class="more" href="{{ app.url_generator.generate('ecommerce') }}">info</a>
+                    </aside>
+                </div>
+
+                <div class="element-1-3">
+                    <img src="images/diseno-desarrollo.png" class="element-header-pic" />
+                    <h3>Diseño y desarrollo</h3>
+                    <div>
+                        <p>Diseñamos y desarrollamos web’s en diferentes formatos y te ofrecemos una creatividad sin límites para llegar a tus objetivos.</p>
+                    </div>
+                    <aside class="element-button">
+                        <a class="more" href="{{ app.url_generator.generate('design') }}">info</a>
+                    </aside>
+                </div>
+
+                <div class="element-1-3">
+                    <img src="images/marketing.png" class="element-header-pic" />
+                    <h3>Marketing</h3>
+                    <div>
+                        <p>Soluciones de branding, campañas de publicidad y marketing digital para hacer un producto social, eficiente y posicionado.</p>
+                    </div>
+                    <aside class="element-button">
+                        <a class="more" href="{{ app.url_generator.generate('marketing') }}">info</a>
+                    </aside>
+                </div>
+
+                <div class="element-1-3">
+                    <img src="images/empresa.png" class="element-header-pic" />
+                    <h3>Consultoría de negocio</h3>
+                    <div>
+                        <p>Ofrecemos nuestra experiencia y profesionalidad a empresas que quieran dar el salto a Internet y las tecnologías móviles.</p>
+                    </div>
+                    <aside class="element-button">
+                            <a class="more" href="#">info</a>
+                    </aside>
+                </div>
+
+                <div class="element-1-3">
+                    <img src="images/personas.png" class="element-header-pic" />
+                    <h3>Gestión de personas</h3>
+                    <div>
+                        <p>Ofrecemos nuestra experiencia y profesionalidad a empresas que quieran dar el salto a Internet y las tecnologías móviles.</p>
+                    </div>
+                    <aside class="element-button">
+                            <a class="more" href="{{ app.url_generator.generate('rrhh') }}">info</a>
+                    </aside>
+                </div>
+
+                <div class="element-1-3">
+                    <img src="images/legal.png" class="element-header-pic" />
+                    <h3>Juridico legal</h3>
+                    <div>
+                        <p>Ofrecemos nuestra experiencia y profesionalidad a empresas que quieran dar el salto a Internet y las tecnologías móviles.</p>
+                    </div>
+                    <aside class="element-button">
+                            <a class="more" href="">info</a>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="element-1-1 description-text">
+                    <p>Nuestros clientes opinan</p>
+                </div>
+            <div id="carousel-clients" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-clients" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-clients" data-slide-to="1"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img class="carousel-back-image" src="images/office.jpg" alt="Lehenengoa.">
+                    <div class="carousel-caption">
+                        <img src="/images/logo.png">
+                        <p>Lehenenogoko slidea hau da</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img class="carousel-back-image" src="images/office.jpg" alt="Juridico legal">
+                    <div class="carousel-caption">
+                        <h3>Juridico legal</h3>
+                        <p>Boso Group somos una empresa de condimentum diam. Proin et diam porta, tempor tellus id, iaculis ipsum. Phasellus laoreet nisi arcu, ut porttitor odio hendrerit id. Maecenas ac facilisis nulla. </p>
+                    </div>
+                </div>
+
+            
+            </div>
+
+            <!-- Controls -->
+            <a class="left carousel-control" href="#carousel-clients" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a class="right carousel-control" href="#carousel-clients" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+        </div>
+        </section>
+   </div>
+   
+{% endblock %}
+
+{% block javascripts %}
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+            <script src="/extra/js/bootstrap.min.js"></script>
+        {% endblock %}

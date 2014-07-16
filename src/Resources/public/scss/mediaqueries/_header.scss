@@ -1,0 +1,81 @@
+header{
+    @media all and (max-width: $break-medium){
+        height: 60px;
+        line-height: 40px;
+        margin-bottom: 24px;
+
+        #logo{
+            width: inherit;
+            height: 60px;
+
+            img{
+                height: 75%; 
+                width: inherit;
+            }
+
+        }
+
+        .feature-box{
+            display: none;
+        }
+
+        nav ul li{
+            width: inherit;
+            margin-left: 2px;
+
+            ul{
+                padding-top: 60px;
+
+                li{
+                    padding: 0 0 0 11px;
+                }
+            }
+
+            &:hover ul{
+                display: inherit;
+            }
+        }
+    }
+
+    nav{
+    	@media all and (max-width: $break-small){
+    		#button_menu{
+	            display: block;
+	            width: 100%;
+	            text-align: right;
+	        }
+
+	        ul{
+	            display: none;
+
+	            li{
+	                display: block;
+	                border-bottom: $mainGrey solid 1px;
+
+	                ul {
+	                    position: inherit;
+	                    display: none;
+	                    left: inherit;
+	                    padding-top: inherit;
+	                    z-index: 9;
+
+	                    li{
+	                        text-align: center;
+	                        background: none;
+	                        padding: inherit;
+	                        border-bottom: none;
+	                        color: $mainGrey;
+	                        width: auto;
+
+	                        a{ color: $mainGrey; }
+
+	                        &:before {
+	                            content: "";
+	                        }
+	                    }
+	                }
+	            }
+	        }
+    	}
+    }
+}

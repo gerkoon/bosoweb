@@ -1,0 +1,14 @@
+#container section.gr-pic_inner > div{
+    @media all and (max-width: $break-medium){
+        position: static;
+    }
+}
+
+#container section.gr-pic h1{
+    @media all and (max-width: $break-medium){
+        max-width: 100%;
+        display: block;
+        position: static;
+        @include box-sizing(border-box);
+    }
+}

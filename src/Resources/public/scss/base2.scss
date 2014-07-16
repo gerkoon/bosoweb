@@ -1,0 +1,98 @@
+@import "compass/reset";
+@import "compass/css3";
+
+header{
+    height: 170px;
+    text-align: justify;
+    padding: 2em 5%;
+    background: #2c3e50;
+    color: #fff;
+
+    h1{
+        display: inline-block;
+
+        a{
+        text-indent: -9999px;
+        background: none repeat scroll 0% 0% blue;
+        max-height: 84px;
+        max-width: 168px;
+        display: inline-block;
+        height: 84px;
+        width: 168px;
+        }
+    }
+    nav{
+        display:inline-block;
+
+        ul{
+        display: inline-block;
+
+            li{
+                display: inline-block;
+                text-align: center;
+                
+                .feature-box{
+                    position: relative;
+                    width: 100px;
+                    height: 100px;
+                    z-index: 10;
+                    
+                    .flip-box{
+                        height: 100%;
+                        width: 100%;
+                        @include transition(float 1s ease);
+                        color: white;
+                                
+                        .front{
+                            background: green; //kenduteko
+                            @include transition (transform (1s ease));
+                            @include rotateY(0deg);
+                            @include transform-style(preserve-3d);
+                            @include backface-visibility(hidden);
+                            height: 100%;
+                            width: 100%;
+                            
+                            &:hover{
+                                @include rotateY(-180deg);
+                            }
+                        }
+                        
+                        .back{
+                            background: blue; //kenduteko
+                            @include transition (transform (1s ease));
+                            @include rotateY(180deg);
+                            @include transform-style(preserve-3d);
+                            @include backface-visibility (hidden);
+                            height: 100%;
+                            width: 100%;
+                         }
+                        
+                        .front, .back{
+                            position: absolute;
+                        }
+                        
+                        &:hover {
+                                .front{
+                                    @include rotateY(-180deg);
+                                }
+                                .back{
+                                    @include rotateY(0deg);
+                                }
+                        }
+                    
+                    } 
+                }
+
+                ul {
+                    position: absolute;
+                    display: none;
+
+                    li{
+                    display: block;
+                    text-align: left;
+                    }
+                }
+            }
+        }
+    }
+}

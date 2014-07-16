@@ -1,0 +1,40 @@
+#logo{
+    float: left;
+    display: inline-block;
+    max-width: 169px;
+    width: 20%;
+
+    img{
+        width: 100%;
+    }
+}
+
+#services{
+    .back{
+        background: url('../images/services.png') top left no-repeat;
+    }
+}
+
+#alotofus{
+    .back{
+        background: url('../images/alotofus.png') top left no-repeat;
+    }
+}
+
+#customer{
+    .back{
+        background: url('../images/customer.png') top left no-repeat;
+    }
+}
+
+#weAre{
+    .back{
+        background: url('../images/weAre.png') top left no-repeat;
+    }
+}
+
+#contact{
+    .back{
+        background: url('../images/contact.png') top left no-repeat;
+    }
+}

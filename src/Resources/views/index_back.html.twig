@@ -1,0 +1,118 @@
+{% extends 'base.html.twig' %}
+{% block stylesheets %} 
+    <link rel="stylesheet" href="/extra/css/animate.css">
+    <link href="/extra/css/bootstrap.min.css" media="screen" rel="stylesheet" type="text/css" />
+{% endblock %}
+{% block body %}
+   <div id="container">
+        <section class="gr-pic">
+            <img src="images/office.jpg" />
+            <h1>consectetur adipiscing elit. In sem neque, rutrum ut enim sed, ornare ornare erat. Nam id varius felis.</h1>
+            
+        </section>
+
+        <section>
+            <div class="yellow">
+                <div class="element-1-1 description-text">
+                    <p>Nuestros servicios</p>
+                </div>
+                <div class="element-1-4">
+                    <img src="#" />
+                    <h3>E-commerce</h3>
+                    <div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sem neque, rutrum ut enim sed, ornare ornare erat. Nam id varius felis. Phasellus vestibulum dolor sed massa placerat commodo. Praesent consectetur nulla dignissim consequat fermentum. Sed in sapien pellentesque, sodales ante eu, gravida sem.</p>
+                    </div>
+                    <aside class="element-button">
+                        <a href="#">Read more</a>
+                    </aside>
+                </div>
+
+                <div class="element-1-4">
+                    <img src="#" />
+                    <h3>Diseño y desarrollo</h3>
+                    <div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sem neque, rutrum ut enim sed, ornare ornare erat. Nam id varius felis. Phasellus vestibulum dolor sed massa placerat commodo. Praesent consectetur nulla dignissim consequat fermentum. Sed in sapien pellentesque, sodales ante eu, gravida sem.</p>
+                    </div>
+                    <aside class="element-button">
+                        <a href="#">Read more</a>
+                    </aside>
+                </div>
+
+                <div class="element-1-4">
+                    <img src="#" />
+                    <h3>Marketing</h3>
+                    <div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sem neque, rutrum ut enim sed, ornare ornare erat. Nam id varius felis. Phasellus vestibulum dolor sed massa placerat commodo. Praesent consectetur nulla dignissim consequat fermentum. Sed in sapien pellentesque, sodales ante eu, gravida sem.</p>
+                    </div>
+                    <aside class="element-button">
+                        <a href="#">Read more</a>
+                    </aside>
+                </div>
+
+                <div class="element-1-4">
+                <img src="#" />
+                <h3>Consultoría de negocio</h3>
+                <div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sem neque, rutrum ut enim sed, ornare ornare erat. Nam id varius felis. Phasellus vestibulum dolor sed massa placerat commodo. Praesent consectetur nulla dignissim consequat fermentum. Sed in sapien pellentesque, sodales ante eu, gravida sem.</p>
+                </div>
+                <aside class="element-button">
+                        <a href="#">Read more</a>
+                    </aside>
+            </div>
+        </section>
+
+        <section class="flexed">
+            <div class="element-1-3">
+                <h6>Last posts</h6>
+                <div id="twitterPosts">
+                    {% include 'twitter.html' %}
+                </div>
+            </div>
+
+            <div class="element-1-3" id="about">
+                <h6>About us</h6>
+                <img src="images/logoAbout.png">
+                <div id="aboutContent">
+                    <p>Pellentesque placerat egestas lectus, id pulvinar massa volutpat eu. Aenean sagittis turpis non arcu ultricies, sit amet pulvinar ipsum commodo. Cras id urna non mi lobortis suscipit vitae at elit.</p>
+
+                    <p><address>Avenida Altos Hornos de Vizcaya, 33. Módulo I8.<br />Barakaldo, 48902. Vizcaya</address><p>
+
+                    <p>Tel: <a href="tel:+34946554603">+34 946 55 46 03</a><br />
+                    Fax: +34 946 55 45 98<br />
+                    Email: <a href="mailto:info@bosogroup.net">info@bosogroup.net</a></p>
+
+                    <nav id="aboutNetworks">
+                        <a href="http://www.linkedin.com/company/boso-group-s-l-"><i class="linkedin">linkedin</i></a>
+                        <a href="https://twitter.com/BoSoGroup"><i class="twitter">twitter</i></a>
+                        <a href="https://es-es.facebook.com/BoSoGroup"><i class="facebook">facebook</i></a>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="element-1-3" id="ContactForm">
+                <h6>Contact form</h6>
+                <form>
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name">
+                    
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
+
+                    <label for="message">Message</label>
+                    <textarea rows="7"></textarea>
+
+                    <input type="submit">
+                </form>
+            </div>
+        </section>
+   </div>
+   
+{% endblock %}
+
+{% block javascripts %}
+            <script src="/extra/js/wow.min.js"></script>
+
+            <script>
+                new WOW().init();
+            </script>
+        {% endblock %}

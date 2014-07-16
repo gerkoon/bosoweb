@@ -1,0 +1,14 @@
+form{
+    &.flexed-column{
+        @media all and (max-width: $break-small){
+            width: 95%;
+            margin: auto;
+        }
+    }
+}
+
+#ContactForm input, #ContactForm textarea{
+    @media all and (max-width: $break-medium){
+        width: 100%;
+    }
+}
